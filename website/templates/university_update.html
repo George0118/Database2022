@@ -1,0 +1,40 @@
+{% extends "base.html"%}
+{% block title %}University - Update{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to update in University table</h3>
+    <div class="form-group">
+      <label for="university_ID">University ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="university_ID"
+        name="university_ID"
+        placeholder="Enter university ID"
+      />
+    </div>
+    <div class="form-group">
+      <label for="ministry_budget">Ministry Budget</label>
+      <input
+        type="text"
+        class="form-control"
+        id="ministry_budget"
+        name="ministry_budget"
+        placeholder="Enter ministry budget"
+      />
+    </div>
+    <div class="form-group">
+      <label for="org_ID">Organization ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="org_ID"
+        name="org_ID"
+        placeholder="Enter organization ID"
+      />
+    </div>
+    <br />
+    <button type="update" class="btn btn-primary">Update</button>
+  </form>
+
+{% endblock %}      

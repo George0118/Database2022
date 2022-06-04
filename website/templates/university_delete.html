@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block title %}University - Delete{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to delete from University table</h3>
+    <div class="form-group">
+      <label for="university_ID">University ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="university_ID"
+        name="university_ID"
+        placeholder="Enter university ID"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Delete</button>
+  </form>
+
+{% endblock %}  

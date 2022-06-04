@@ -1,0 +1,29 @@
+{% extends "base.html"%}
+{% block title %}Final Product - Read{% endblock %}
+{% block content %}
+<div class="customers-card">
+    <h3>Final Products</h3>
+    <table class="table table-sm table-borderless">
+        <thead>
+        <tr>
+            <td>Product ID</td>
+            <td>Product Title</td>
+            <td>Project ID</td>
+            <td>Product Summary</td>
+            <td>Product Due Date</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in range(length) %}
+        <tr class="customer-row">
+            <td>{{ list1[i] }}</td>
+            <td>{{ list2[i] }}</td>
+            <td>{{ list3[i] }}</td>
+            <td>{{ list4[i] }}</td>
+            <td>{{ list5[i] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

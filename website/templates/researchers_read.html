@@ -1,0 +1,35 @@
+{% extends "base.html"%}
+{% block title %}Researchers - Read{% endblock %}
+{% block content %}
+<div class="customers-card">
+    <h3>Researchers</h3>
+    <table class="table table-sm table-borderless">
+        <thead>
+        <tr>
+            <td>Researcher ID</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Gender</td>
+            <td>Birth Date</td>
+            <td>Organization ID</td>
+            <td>Employment Starting Date</td>
+            <td>Age</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in range(length) %}
+        <tr class="customer-row">
+            <td>{{ list1[i] }}</td>
+            <td>{{ list2[i] }}</td>
+            <td>{{ list3[i] }}</td>
+            <td>{{ list4[i] }}</td>
+            <td>{{ list5[i] }}</td>
+            <td>{{ list6[i] }}</td>
+            <td>{{ list7[i] }}</td>
+            <td>{{ list8[i] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

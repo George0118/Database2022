@@ -1,0 +1,153 @@
+{% extends "base.html"%}
+{% block title %}Update{% endblock %}
+{% block content %} <h3>Welcome to the update section of our database</h3>
+                    <p>Here you can update data to our database</p>
+<div class="container" id="row-container">
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Organizations</h4>
+                    <p class="card-text" id="paragraph">Update data to organizations table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/organizations_update">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Researchers</h4>
+                    <p class="card-text" id="paragraph">Update data to researchers table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/researchers_update">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">HFRI department</h4>
+                    <p class="card-text" id="paragraph">Update data to HFRI department table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/HFRI_department_update">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Financial Programme</h4>
+                    <p class="card-text" id="paragraph">Update data to financial programmes table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/financial_programme_update">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">HFRI executives</h4>
+                    <p class="card-text" id="paragraph">Update data to HFRI executives table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/HFRI_executives_update">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Projects</h4>
+                    <p class="card-text" id="paragraph">Update data to projects table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/projects_update">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Organization Address</h4>
+                    <p class="card-text" id="paragraph">Update data to organization address table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/organization_address_update">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Organization Telephone</h4>
+                    <p class="card-text" id="paragraph">Update data to organization telephone table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/organization_telephone_update">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Company</h4>
+                    <p class="card-text" id="paragraph">Update data to company table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/company_update">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">University</h4>
+                    <p class="card-text" id="paragraph">Update data to university table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/university_update">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Research Center</h4>
+                    <p class="card-text" id="paragraph">Update data to research center table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/research_center_update">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Final Product</h4>
+                    <p class="card-text" id="paragraph">Update data to final product table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/final_product_update">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Project - Scientific Field</h4>
+                    <p class="card-text" id="paragraph">Update data to "belongs to" table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/belongs_to_update">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Project - Researchers</h4>
+                    <p class="card-text" id="paragraph">Update data to "works" table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/works_update">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Project - Evaluator</h4>
+                    <p class="card-text" id="paragraph">Update data to "evaluates" table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update/evaluate_update">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

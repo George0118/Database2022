@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block title %}HFRI Department - Delete{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to delete from HFRI Department table</h3>
+    <div class="form-group">
+      <label for="HFRI_department_ID">HFRI department ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="HFRI_department_ID"
+        name="HFRI_department_ID"
+        placeholder="Enter HFRI department ID"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Delete</button>
+  </form>
+
+{% endblock %}  

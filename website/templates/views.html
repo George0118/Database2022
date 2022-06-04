@@ -1,0 +1,25 @@
+{% extends "base.html"%}
+{% block title %}Queries{% endblock %}
+{% block content %} <h3>Welcome to the Views section of our database</h3>
+                    <p>Here you can select to see one of two views available</p>
+                    <div class="container" id="row-container">
+                        <div class="row" id="row">
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">View 1</h4>
+                                        <p class="card-text" id="paragraph">Show a view of our database that includes which researchers work in which projects</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query2/view1">Show</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">View 2</h4>
+                                        <p class="card-text" id="paragraph">Show a view of our database that includes which projects belong to which scientific field</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query2/view2">Show</a>
+                                    </div>
+                                </div>
+                            </div>
+{% endblock %}                            

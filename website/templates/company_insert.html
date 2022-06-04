@@ -1,0 +1,40 @@
+{% extends "base.html"%}
+{% block title %}Company - Insert{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to insert in Company table</h3>
+    <div class="form-group">
+      <label for="company_ID">Copmany ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="company_ID"
+        name="company_ID"
+        placeholder="Enter company ID"
+      />
+    </div>
+    <div class="form-group">
+      <label for="capital">Capital</label>
+      <input
+        type="text"
+        class="form-control"
+        id="capital"
+        name="capital"
+        placeholder="Enter capital"
+      />
+    </div>
+    <div class="form-group">
+      <label for="org_ID">Organization ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="org_ID"
+        name="org_ID"
+        placeholder="Enter organization ID"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Insert</button>
+  </form>
+
+{% endblock %}  

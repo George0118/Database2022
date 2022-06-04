@@ -1,0 +1,135 @@
+{% extends "base.html"%}
+{% block title %}Delete{% endblock %}
+{% block content %} <h3>Welcome to the Delete section of our database</h3>
+                    <p>Here you can delete data from our database</p>
+<div class="container" id="row-container">
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Organizations</h4>
+                    <p class="card-text" id="paragraph">Delete data from organizations table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/organizations_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Researchers</h4>
+                    <p class="card-text" id="paragraph">Delete data from researchers table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/researchers_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">HFRI department</h4>
+                    <p class="card-text" id="paragraph">Delete data from HFRI department table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/HFRI_department_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Financial Programme</h4>
+                    <p class="card-text" id="paragraph">Delete data from financial programmes table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/financial_programme_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">HFRI executives</h4>
+                    <p class="card-text" id="paragraph">Delete data from HFRI executives table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/HFRI_executives_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Projects</h4>
+                    <p class="card-text" id="paragraph">Delete data from projects table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/projects_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Organization Address</h4>
+                    <p class="card-text" id="paragraph">Delete data from organization address table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/organization_address_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Organization Telephone</h4>
+                    <p class="card-text" id="paragraph">Delete data from organization telephone table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/organization_telephone_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Final Product</h4>
+                    <p class="card-text" id="paragraph">Delete data from final product table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/final_product_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Scientific Field</h4>
+                    <p class="card-text" id="paragraph">Delete data from scientific field table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/scientific_field_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Project - Scientific Field</h4>
+                    <p class="card-text" id="paragraph">Delete data from "belongs to" table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/belongs_to_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Project - Researchers</h4>
+                    <p class="card-text" id="paragraph">Delete data from "works" table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/works_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Project - Evaluator</h4>
+                    <p class="card-text" id="paragraph">Delete data from "evaluates" table</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete/evaluate_delete">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

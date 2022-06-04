@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block title %}Researchers - Delete{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to delete from Researchers table</h3>
+    <div class="form-group">
+      <label for="researcher_ID">Researcher ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="researcher_ID"
+        name="researcher_ID"
+        placeholder="Enter researcher ID"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Delete</button>
+  </form>
+
+{% endblock %}

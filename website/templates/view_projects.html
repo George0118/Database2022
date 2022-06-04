@@ -1,0 +1,87 @@
+{% extends "base.html"%}
+{% block title %}Project - Financial Programmes{% endblock %}
+{% block content %} <h3>Projects - Financial Programmes</h3>
+                    <p>Here you can select to see projects and their financial programmes by some parameters</p>
+                    <div class="container" id="row-container">
+                        <div class="row" id="row">
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">Complete view</h4>
+                                        <p class="card-text" id="paragraph">Include additionally the duration of the project, the executive that manages it's finances and it's starting date</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1/all">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">Don't include starting date</h4>
+                                        <p class="card-text" id="paragraph">Include additionally the duration of the project and the executive that manages it's finances</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1/no_starting_date">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">Don't include executive's information</h4>
+                                        <p class="card-text" id="paragraph">Include additionally the duration of the project and it's duration</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1/no_exec">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+
+                        <div class="row" id="row">
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">Don't include project's duration</h4>
+                                        <p class="card-text" id="paragraph">Include additionally the project's starting date and the executive that manages it's finances</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1/no_duration">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">Include only the duration of the project</h4>
+                                        <p class="card-text" id="paragraph">Include additional information only about the duration of the project</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1/only_duration">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">Include only the starting date of the project</h4>
+                                        <p class="card-text" id="paragraph">Include additionally only the starting date of the project</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1/only_starting_date">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+
+                        <div class="row" id="row">
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">Include only executive's information</h4>
+                                        <p class="card-text" id="paragraph">Include additional information only about the executive that manages the project's finances</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1/only_exec">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">No additional information</h4>
+                                        <p class="card-text" id="paragraph">Don't include additional information</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1/plain">Show</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>                                       
+{% endblock %}

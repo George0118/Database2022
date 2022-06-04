@@ -1,0 +1,23 @@
+{% extends "base.html"%}
+{% block title %}View 2{% endblock %}
+{% block content %}
+<div class="customers-card">
+    <h3>Top 3 Inderdisciplinary Fields</h3>
+    <table class="table table-sm table-borderless">
+        <thead>
+        <tr>
+            <td>Scientific Field</td>
+            <td>Project Title</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in range(length) %}
+        <tr class="customer-row">
+            <td>{{ list1[i] }}</td>
+            <td>{{ list2[i] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

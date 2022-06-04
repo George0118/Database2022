@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block title %}HFRI Executives - Delete{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to delete from HFRI Executives table</h3>
+    <div class="form-group">
+      <label for="executive_ID">HFRI Executives ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="executive_ID"
+        name="executive_ID"
+        placeholder="Enter HFRI executives ID"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Delete</button>
+  </form>
+
+{% endblock %}  

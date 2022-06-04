@@ -1,0 +1,28 @@
+{% extends "base.html"%}
+{% block title %}Query 4{% endblock %}
+{% block content %}
+<div class="customers-card">
+    <h3>Organizations that had the same number of projects in a span of two years with more than 2 projects each year</h3>
+    <table class="table table-sm table-borderless">
+        <thead>
+        <tr>
+            <td>Organization 1 Name</td>
+            <td>Organization 2 Name</td>
+            <td>First of the two years</td>
+            <td>Number of projects in those two years</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in range(length) %}
+        <tr class="customer-row">
+            <td>{{ list1[i] }}</td>
+            <td>{{ list2[i] }}</td>
+            <td>{{ list3[i] }}</td>
+            <td>{{ list4[i] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+

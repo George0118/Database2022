@@ -1,0 +1,49 @@
+{% extends "base.html"%}
+{% block title %}CRUD{% endblock %}
+{% block content %} <h3>Welcome to the CRUD section of our database</h3>
+                    <p>Here you can Update, Insert or Delete data from our database</p>
+<div class="container" id="row-container">
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Insert</h4>
+                    <p class="card-text" id="paragraph">Insert data to our database</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/insert">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Update</h4>
+                    <p class="card-text" id="paragraph">Update data from our database</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/update">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Delete</h4>
+                    <p class="card-text" id="paragraph">Delete data from our database</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/delete">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row">
+        <div class="col-md-4">
+            <div class="card" id="card-container-layout">
+                <div class="card-body" id="card">
+                    <h4 class="card-title">Read</h4>
+                    <p class="card-text" id="paragraph">Read data from our database</p>
+                    <a class="btn btn-primary" id="show-btn" href="/CRUD/read">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

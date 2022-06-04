@@ -1,0 +1,80 @@
+{% extends "base.html"%}
+{% block title %}Researchers - Insert{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to insert in Researchers table</h3>
+    <div class="form-group">
+      <label for="researcher_ID">Researcher ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="researcher_ID"
+        name="researcher_ID"
+        placeholder="Enter researcher ID"
+      />
+    </div>
+    <div class="form-group">
+      <label for="first_name">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="first_name"
+        name="first_name"
+        placeholder="Enter first name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="last_name"
+        name="last_name"
+        placeholder="Enter last name"
+      />
+    </div>
+    <div class="form-group">
+        <label for="gender">Gender</label>
+        <input
+          type="text"
+          class="form-control"
+          id="gender"
+          name="gender"
+          placeholder="Enter gender"
+        />
+      </div>
+      <div class="form-group">
+        <label for="birth_date">Birth Date</label>
+        <input
+          type="date"
+          class="form-control"
+          id="birth_date"
+          name="birth_date"
+          placeholder="Enter birth date"
+        />
+      </div>
+      <div class="form-group">
+        <label for="org_ID">Organization ID</label>
+        <input
+          type="text"
+          class="form-control"
+          id="org_ID"
+          name="org_ID"
+          placeholder="Enter organization ID"
+        />
+      </div>
+      <div class="form-group">
+        <label for="employment_starting_date">Employment Starting Date</label>
+        <input
+          type="date"
+          class="form-control"
+          id="employment_starting_date"
+          name="employment_starting_date"
+          placeholder="Enter employment starting date"
+        />
+      </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Insert</button>
+  </form>
+
+{% endblock %}  

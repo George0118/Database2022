@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block title %}Scientific Field - {% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to insert in Scientific Field table</h3>
+    <div class="form-group">
+      <label for="scientific_field_name"> Scientific Field Name </label>
+      <input
+        type="text"
+        class="form-control"
+        id="scientific_field_name"
+        name="scientific_field_name"
+        placeholder="Enter scientific field name"
+      />
+    </div>
+    <br />
+    <button type="update" class="btn btn-primary">Insert</button>
+  </form>
+
+{% endblock %}  

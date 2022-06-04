@@ -1,0 +1,50 @@
+{% extends "base.html"%}
+{% block title %}Research Center - Update{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to update in Research Center table</h3>
+    <div class="form-group">
+      <label for="research_center_ID">Research Center ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="research_center_ID"
+        name="research_center_ID"
+        placeholder="Enter research center ID"
+      />
+    </div>
+    <div class="form-group">
+      <label for="ministry_budget">Ministry Budget</label>
+      <input
+        type="text"
+        class="form-control"
+        id="ministry_budget"
+        name="ministry_budget"
+        placeholder="Enter ministry budget"
+      />
+    </div>
+    <div class="form-group">
+        <label for="private_budget">Private Budget</label>
+        <input
+          type="text"
+          class="form-control"
+          id="private_budget"
+          name="private_budget"
+          placeholder="Enter private budget"
+        />
+      </div>
+    <div class="form-group">
+      <label for="org_ID">Organization ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="org_ID"
+        name="org_ID"
+        placeholder="Enter organization ID"
+      />
+    </div>
+    <br />
+    <button type="update" class="btn btn-primary">Update</button>
+  </form>
+
+{% endblock %}      

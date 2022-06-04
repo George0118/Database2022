@@ -1,0 +1,41 @@
+{% extends "base.html"%}
+{% block title %}Projects - Read{% endblock %}
+{% block content %}
+<div class="customers-card">
+    <h3>Projects</h3>
+    <table class="table table-sm table-borderless">
+        <thead>
+        <tr>
+            <td>Project ID</td>
+            <td>Project Title</td>
+            <td>Project Starting Date</td>
+            <td>Project Summary</td>
+            <td>Project Due Date</td>
+            <td>Supervisor Executive ID</td>
+            <td>Supervisor Researcher ID</td>
+            <td>Organization ID</td>
+            <td>Capital</td>
+            <td>Financial Programme ID</td>
+            <td>Duration</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in range(length) %}
+        <tr class="customer-row">
+            <td>{{ list1[i] }}</td>
+            <td>{{ list2[i] }}</td>
+            <td>{{ list3[i] }}</td>
+            <td>{{ list4[i] }}</td>
+            <td>{{ list5[i] }}</td>
+            <td>{{ list6[i] }}</td>
+            <td>{{ list7[i] }}</td>
+            <td>{{ list8[i] }}</td>
+            <td>{{ list9[i] }}</td>
+            <td>{{ list10[i] }}</td>
+            <td>{{ list11[i] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

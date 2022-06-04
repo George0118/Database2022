@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block title %}Research Center - Delete{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to delete from Research Center table</h3>
+    <div class="form-group">
+      <label for="research_center_ID">Research Center ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="research_center_ID"
+        name="research_center_ID"
+        placeholder="Enter research center ID"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Delete</button>
+  </form>
+
+{% endblock %}  

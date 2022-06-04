@@ -1,0 +1,40 @@
+{% extends "base.html"%}
+{% block title %}Organization Telephone - Update{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to update in Organization Telephone table</h3>
+    <div class="form-group">
+      <label for="org_ID">Organization ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="org_ID"
+        name="org_ID"
+        placeholder="Enter organizationID"
+      />
+    </div>
+    <div class="form-group">
+      <label for="telephone">Organization Telephone</label>
+      <input
+        type="tel"
+        class="form-control"
+        id="telephone"
+        name="telephone"
+        placeholder="Enter telephone"
+      />
+    </div>
+    <div class="form-group">
+      <label for="new_telephone">New Organization Telephone</label>
+      <input
+        type="tel"
+        class="form-control"
+        id="new_telephone"
+        name="new_telephone"
+        placeholder="Enter new telephone"
+      />
+    </div>
+    <br />
+    <button type="update" class="btn btn-primary">Update</button>
+  </form>
+
+{% endblock %}  

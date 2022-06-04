@@ -1,0 +1,26 @@
+{% extends "base.html"%}
+{% block title %}No final products{% endblock %}
+{% block content %}
+<div class="customers-card">
+    <h3>Researcher working in 5 or more projects without final products</h3>
+    <table class="table table-sm table-borderless">
+        <thead>
+        <tr>
+            <td>Researcher Last Name</td>
+            <td>Researcher First Name</td>
+            <td>Number of projects without final products</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in range(length) %}
+        <tr class="customer-row">
+            <td>{{ list1[i] }}</td>
+            <td>{{ list2[i] }}</td>
+            <td>{{ list3[i] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+

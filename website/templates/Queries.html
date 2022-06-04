@@ -1,0 +1,85 @@
+{% extends "base.html"%}
+{% block title %}Queries{% endblock %}
+{% block content %} <h3>Welcome to the Queries section of our database</h3>
+                    <p>Here you can select to access our database from a number of queries</p>
+                    <div class="container" id="row-container">
+                        <div class="row" id="row">
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">View Projects</h4>
+                                        <p class="card-text" id="paragraph">Projects - Financial Programmes</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">Views</h4>
+                                        <p class="card-text" id="paragraph">From here you can select to see on of two views available</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query2">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">Interesting Field</h4>
+                                        <p class="card-text" id="paragraph">Show the researchers that are in this interesting field</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query3">Show</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="row" id="row-2">
+                          <div class="col-md-4">
+                              <div class="card" id="card-container-layout">
+                                  <div class="card-body" id="card">
+                                      <h4 class="card-title">Consecutive years</h4>
+                                      <p class="card-text" id="paragraph">Show organizations that have the same and more than 10 number of projects in two consecutive years</p>
+                                      <a class="btn btn-primary" id="show-btn" href="/queries/query4">Show</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="card" id="card-container-layout">
+                                  <div class="card-body" id="card">
+                                      <h4 class="card-title">Top 3 Inderdisciplinary Fields</h4>
+                                      <p class="card-text" id="paragraph">Show which 3 inderdisciplinary fields are the most popular</p>
+                                      <a class="btn btn-primary" id="show-btn" href="/queries/query5">Show</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="card" id="card-container-layout">
+                                  <div class="card-body" id="card">
+                                      <h4 class="card-title">Young Researchers</h4>
+                                      <p class="card-text" id="paragraph">Show which researchers under 40 y.o. are working in the most projects and the number of projects</p>
+                                      <a class="btn btn-primary" id="show-btn" href="/queries/query6">Show</a>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="row" id="row-3">
+                          <div class="col-md-4">
+                              <div class="card" id="card-container-layout">
+                                  <div class="card-body" id="card">
+                                      <h4 class="card-title">Top 5 HFRI executives</h4>
+                                      <p class="card-text" id="paragraph">HFRI executives that are managing the most money</p>
+                                      <a class="btn btn-primary" id="show-btn" href="/queries/query7">Show</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="card" id="card-container-layout">
+                                  <div class="card-body" id="card">
+                                      <h4 class="card-title">More Researchers</h4>
+                                      <p class="card-text" id="paragraph">Show researchers that are working in at least 5 projects that don't have deliverables</p>
+                                      <a class="btn btn-primary" id="show-btn" href="/queries/query8">Show</a>
+                                  </div>
+                              </div>
+                          </div>
+{% endblock %}

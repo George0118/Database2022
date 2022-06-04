@@ -1,0 +1,52 @@
+{% extends "base.html"%}
+{% block title %}Belongs to - Update{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to update in Projects - Scientific Field table</h3>
+    <div class="form-group">
+      <label for="scientific_field"> Scientific Field </label>
+      <input
+        type="text"
+        class="form-control"
+        id="scientific_field"
+        name="scientific_field"
+        placeholder="Enter scientific field"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="project_ID"> Project ID </label>
+      <input
+        type="text"
+        class="form-control"
+        id="project_ID"
+        name="project_ID"
+        placeholder="Enter project ID"
+      />
+    </div>
+    
+    <div class="form-group">
+      <label for="old_scientific_field"> Old Scientific Field </label>
+      <input
+        type="text"
+        class="form-control"
+        id="old_scientific_field"
+        name="old_scientific_field"
+        placeholder="Enter old scientific field"
+      />
+    </div>
+    <div class="form-group">
+      <label for="old_project_ID"> Old Project ID </label>
+      <input
+        type="text"
+        class="form-control"
+        id="old_project_ID"
+        name="old_project_ID"
+        placeholder="Enter old project ID"
+      />
+    </div>
+    <br />
+    <button type="update" class="btn btn-primary">Update</button>
+  </form>
+
+{% endblock %}  

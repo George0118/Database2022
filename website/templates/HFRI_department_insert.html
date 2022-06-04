@@ -1,0 +1,30 @@
+{% extends "base.html"%}
+{% block title %}HFRI Department - Insert{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to insert in HFRI Department table</h3>
+    <div class="form-group">
+      <label for="HFRI_department_ID">HFRI Department ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="HFRI_department_ID"
+        name="HFRI_department_ID"
+        placeholder="Enter HFRI department ID"
+      />
+    </div>
+    <div class="form-group">
+      <label for="HFRI_department_name">HFRI Department Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="HFRI_department_name"
+        name="HFRI_department_name"
+        placeholder="Enter HFRI department name"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Insert</button>
+  </form>
+
+{% endblock %}  

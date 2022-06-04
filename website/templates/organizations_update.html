@@ -1,0 +1,39 @@
+{% extends "base.html"%}
+{% block title %}Organizations - Update{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to update in Organizations table</h3>
+    <div class="form-group">
+      <label for="org_ID">Organization ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="org_ID"
+        name="org_ID"
+        placeholder="Enter organization ID"
+      />
+    </div>
+    <div class="form-group">
+      <label for="org_name">Organization Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="org_name"
+        name="org_name"
+        placeholder="Enter organization name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="org_acronym">Organization Acronym</label>
+      <input
+        type="text"
+        class="form-control"
+        id="org_acronym"
+        name="org_acronym"
+        placeholder="Enter organization acronym"
+      />
+    </div>
+    <br />
+    <button type="update" class="btn btn-primary">Update</button>
+  </form>
+{% endblock %}  

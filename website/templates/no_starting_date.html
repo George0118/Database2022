@@ -1,0 +1,36 @@
+{% extends "base.html"%}
+{% block title %}No starting date{% endblock %}
+{% block content %} <h3>Welcome to the sorting section of this query</h3>
+                    <p>Here you can select the way you want the results to be sorted by</p>
+                    <div class="container" id="row-container">
+                        <div class="row" id="row">
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">By title</h4>
+                                        <p class="card-text" id="paragraph">Sort results by project's title</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1/no_starting_date/no_starting_date_by_title">Sort</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">By duration</h4>
+                                        <p class="card-text" id="paragraph">Sort results by project's duration</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1/no_starting_date/no_starting_date_by_duration">Sort</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" id="card-container-layout">
+                                    <div class="card-body" id="card">
+                                        <h4 class="card-title">By executive</h4>
+                                        <p class="card-text" id="paragraph">Sort results by executive's name</p>
+                                        <a class="btn btn-primary" id="show-btn" href="/queries/query1/no_starting_date/no_starting_date_by_exec">Sort</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>        
+{% endblock %}                            

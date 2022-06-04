@@ -1,0 +1,27 @@
+{% extends "base.html"%}
+{% block title %}Evaluates - Read{% endblock %}
+{% block content %}
+<div class="customers-card">
+    <h3>Projects - Evaluators</h3>
+    <table class="table table-sm table-borderless">
+        <thead>
+        <tr>
+            <td>Researcher ID</td>
+            <td>Project ID</td>
+            <td>Grade</td>
+            <td>Evaluation Date</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in range(length) %}
+        <tr class="customer-row">
+            <td>{{ list1[i] }}</td>
+            <td>{{ list2[i] }}</td>
+            <td>{{ list3[i] }}</td>
+            <td>{{ list4[i] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

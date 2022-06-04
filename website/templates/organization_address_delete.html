@@ -1,0 +1,42 @@
+{% extends "base.html"%}
+{% block title %}Organization Address - Delete{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to delete from Organization Address table</h3>
+    <div class="form-group">
+      <label for="street">Organization Address: street</label>
+      <input
+        type="text"
+        class="form-control"
+        id="street"
+        name="street"
+        placeholder="Enter organization address: street ID"
+      />
+    </div>
+
+    <div class="form-group">
+        <label for="st_number">Organization Address: street number ID</label>
+        <input
+          type="text"
+          class="form-control"
+          id="st_number"
+          name="st_number"
+          placeholder="Enter organization address: street number ID"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="ZIP_code">Organization Address: zip code ID</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ZIP_code"
+          name="ZIP_code"
+          placeholder="Enter organization address: zip code ID"
+        />
+      </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Delete</button>
+  </form>
+
+{% endblock %} 

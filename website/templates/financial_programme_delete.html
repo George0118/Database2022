@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block title %}Financial Programme - Delete{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to delete from Financial Programme table</h3>
+    <div class="form-group">
+      <label for="programme_ID">Financial Programme ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="programme_ID"
+        name="programme_ID"
+        placeholder="Enter financial programme ID"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Delete</button>
+  </form>
+
+{% endblock %}  

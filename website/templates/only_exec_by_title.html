@@ -1,0 +1,31 @@
+{% extends "base.html"%}
+{% block title %}Query 1 - Results{% endblock %}
+{% block content %}
+<div class="customers-card">
+    <h3>View of Projects - Financial Programmes only including executive's information sorted by project's title</h3>
+    <table class="table table-sm table-borderless">
+        <thead>
+        <tr>
+            <td>Project Title</td>
+            <td>Executive First Name</td>
+            <td>Executive Last Name</td>
+            <td>Financial Programme ID</td>
+            <td>Researcher First Name</td>
+            <td>Researcher Last Name</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in range(length) %}
+        <tr class="customer-row">
+            <td>{{ list1[i] }}</td>
+            <td>{{ list2[i] }}</td>
+            <td>{{ list3[i] }}</td>
+            <td>{{ list4[i] }}</td>
+            <td>{{ list5[i] }}</td>
+            <td>{{ list6[i] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

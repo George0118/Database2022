@@ -1,0 +1,110 @@
+{% extends "base.html"%}
+{% block title %}Projects - Update{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Give information you want to update in Projects table</h3>
+    <div class="form-group">
+      <label for="project_ID">Project ID</label>
+      <input
+        type="text"
+        class="form-control"
+        id="project_ID"
+        name="project_ID"
+        placeholder="Enter project ID"
+      />
+    </div>
+    <div class="form-group">
+      <label for="project_title">Project Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="project_title"
+        name="project_title"
+        placeholder="Enter project title"
+      />
+    </div>
+    <div class="form-group">
+      <label for="project_starting_date">Project Starting Date</label>
+      <input
+        type="date"
+        class="form-control"
+        id="project_starting_date"
+        name="project_starting_date"
+        placeholder="Enter project starting date"
+      />
+    </div>
+    <div class="form-group">
+        <label for="project_summary">Project Summary</label>
+        <input
+          type="text"
+          class="form-control"
+          id="project_summary"
+          name="project_summary"
+          placeholder="Enter project summary"
+        />
+      </div>
+      <div class="form-group">
+        <label for="project_due_date">Project Due Date</label>
+        <input
+          type="date"
+          class="form-control"
+          id="project_due_date"
+          name="project_due_date"
+          placeholder="Enter project due date"
+        />
+      </div>
+      <div class="form-group">
+        <label for="supervisor_executive_ID">Supervisor Executive ID</label>
+        <input
+          type="text"
+          class="form-control"
+          id="supervisor_executive_ID"
+          name="supervisor_executive_ID"
+          placeholder="Enter supervisor executive ID"
+        />
+      </div>
+      <div class="form-group">
+        <label for="supervisor_researcher_ID">Supervisor Researcher ID</label>
+        <input
+          type="text"
+          class="form-control"
+          id="supervisor_researcher_ID"
+          name="supervisor_researcher_ID"
+          placeholder="Enter supervisor researcher ID"
+        />
+      </div>
+      <div class="form-group">
+        <label for="org_ID">Organization ID</label>
+        <input
+          type="text"
+          class="form-control"
+          id="org_ID"
+          name="org_ID"
+          placeholder="Enter organization ID"
+        />
+      </div>
+      <div class="form-group">
+        <label for="capital">Capital</label>
+        <input
+          type="text"
+          class="form-control"
+          id="capital"
+          name="capital"
+          placeholder="Enter capital"
+        />
+      </div>
+      <div class="form-group">
+        <label for="programme_ID">Financial Programme ID</label>
+        <input
+          type="text"
+          class="form-control"
+          id="programme_ID"
+          name="programme_ID"
+          placeholder="Enter financial programme ID"
+        />
+      </div>
+    <br />
+    <button type="update" class="btn btn-primary">Update</button>
+  </form>
+
+{% endblock %}  
