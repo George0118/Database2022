@@ -7,5 +7,6 @@ Installation Guide
 1. Download the files
 2. Open and run XAMPP
 3. Run the schema and the initial inserts from the SQL_initial file.
-4. Open a Command Prompt and run > pip install -r requirments.txt, while being in the directory of the downloaded files
-5. Lastly open the main.py file and run it. Click on the link and enjoy the website!
+4. Open a Command Prompt and run python -m pip install --upgrade pip
+5. Then, run > pip install -r requirments.txt, while being in the directory of the downloaded files
+6. Lastly open the main.py file and run it. Click on the link and enjoy the website!
