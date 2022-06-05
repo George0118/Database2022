@@ -7,7 +7,7 @@ Installation Guide
 1. First you need XAMPP and MySQL Workbench, to be installed on your computer
 2. Download the files
 3. Open and run XAMPP and start Apache and MySQL
-4. Open MySQL Workbench and establish a default connection as root
+4. Open MySQL Workbench and establish a default connection as root and NO password
 5. From this connection open the two files from the SQL_init folder
 6. First run the schema and then the inserts
 7. Open a Command Prompt and run python -m pip install --upgrade pip
